@@ -6,7 +6,7 @@
 /*   By: mkootstr <mkootstr@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/07/26 14:03:37 by mkootstr      #+#    #+#                 */
-/*   Updated: 2024/02/16 15:38:40 by mkootstr      ########   odam.nl         */
+/*   Updated: 2024/03/04 16:56:25 by mkootstr      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -122,7 +122,7 @@ long int get_time(t_shared *shared)
 	{
 		gettimeofday(&time, NULL);
 		shared->start = time.tv_sec * 1000 + time.tv_usec / 1000;
-		return (shared->start);
+		return (0);
 	}
 	else
 	{
@@ -133,7 +133,7 @@ long int get_time(t_shared *shared)
 
 void	take_forks(t_philo *philo)
 {
-
+	
 }
 
 void	routine(void *arg)

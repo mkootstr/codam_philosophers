@@ -6,7 +6,7 @@
 /*   By: mkootstr <mkootstr@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/02/16 15:07:27 by mkootstr      #+#    #+#                 */
-/*   Updated: 2024/02/16 15:14:27 by mkootstr      ########   odam.nl         */
+/*   Updated: 2024/02/16 15:43:06 by mkootstr      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ typedef struct timeval t_timeval;
 typedef struct s_shared
 {
 	ssize_t nr_philo;
-	int start;
+	long int start;
 	ssize_t t_die;
 	ssize_t t_eat;
 	ssize_t t_sleep;
